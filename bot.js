@@ -133,7 +133,7 @@ client.on('message', async msg => {
                 const video2 = await youtube.getVideoByID(video.id); 
                 await handleVideo(video2, msg, voiceChannel, true); 
             }
-			return msg.channel.send(`**${playlist.title}**, Just added to the queue!`);
+			return msg.channel.send(`**${playlist.title}**, تم اضافة الاغنية الى القائمة`);
 		} else {
 
 			try {
@@ -146,7 +146,7 @@ client.on('message', async msg => {
 					var videos = await youtube.searchVideos(searchString, 5);
 					let index = 0;
                     const embed1 = new Discord.RichEmbed()
-                    .setTitle(":mag_right:  YouTube Search Results :")
+                    .setTitle(":mag_right:  اغاني اليوتيوب التي تم ايجادها :")
                     .setDescription(`
                     ${videos.map(video2 => `${++index}. **${video2.title}**`).join('\n')}`)
                     
@@ -242,7 +242,7 @@ client.on('message', async msg => {
             return msg.channel.send('تم التشغيل');
             
 		}
-		return msg.channel.send('Queue is empty!');
+		return msg.channel.send('لا توجد اي اغنية في القائمة');
 	}
 
 	return undefined;
