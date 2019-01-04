@@ -34,7 +34,6 @@ client.on('message', message => {
     if (message.content === "!help") {
     let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-  .setFooter(`https://e.top4top.net/p_1099h2qc51.jpg')
   .setColor("#000000")
   .addField("Quran Bot | Commands")
   
