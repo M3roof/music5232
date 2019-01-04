@@ -57,7 +57,7 @@ if(message.content === prefix + 'quran') {
 
 	let embed = new Discord.RichEmbed()
 	.setColor('#264d00')
-	.setFooter(`القراآن الكريم | صفحة رقم ${page} من اصل ${pages.length} صفحة`, 'https://cdn.discordapp.com/attachments/404332408075190282/412722171325054996/NS1.png')
+	.setFooter(`القراآن الكريم | صفحة رقم ${page} من اصل ${pages.length} صفحة`, 'https://e.top4top.net/p_1099h2qc51.jpg')
 	.setImage(pages[page-1])
 
 // ${page}
@@ -124,7 +124,6 @@ if(message.content === prefix + 'quran') {
 	})
 }
 });
-
 
 
 
