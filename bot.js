@@ -30,28 +30,19 @@ var adminprefix = '!'
 
 
 
-client.on('message', message => {
-    if (message.content === "!help") {
-    let embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username)
-  .setColor("#000000")
-  .addField("Quran Bot | Commands")
-  
-  
-
-**__!quran__** | **عرض صفحات القران**
-
-
-
-
-
-
-
-  
+   client.on("message", message => {
+      if (message.content === "$help") {
+       const embed = new Discord.RichEmbed() 
+           .setColor("#FF0000")
+           .setDescription(`Quran Bot Commands
+**__!quran__** | **عرض صفحات القران الكريم**
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**قريبا الاكثر**`)
   message.channel.sendEmbed(embed);
-  }
-  });
-
+     
+     }
+     });
+  
 
 
 
