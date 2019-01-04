@@ -31,10 +31,12 @@ var adminprefix = '!'
 
 
    client.on("message", message => {
-      if (message.content === "$help") {
+      if (message.content === "!help") {
        const embed = new Discord.RichEmbed() 
            .setColor("#FF0000")
            .setDescription(`Quran Bot Commands
+
+
 **__!quran__** | **عرض صفحات القران الكريم**
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 **قريبا الاكثر**`)
