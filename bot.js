@@ -22,7 +22,7 @@ var adminprefix = '!'
 
 client.on("message", async message => {
 var prefix = "$"
-    if(message.content.startsWith(prefix + "banlist")) {
+    if(message.content.startsWith(prefix + "list")) {
         if(!message.guild) return;
                 if(!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send('**Sorry But You Dont Have Permission** `BAN_MEMBERS`' );
         message.guild.fetchBans()
