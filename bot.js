@@ -29,7 +29,7 @@ var prefix = "$"
         .then(bans => {
             let b = bans.size;
             let bb = bans.map(a => `${a}`).join(" - ");
-            message.channel.send(`**`${b}` | ${bb}**`);
+            message.channel.send(`**${b} | ${bb}**`);
         });
     }
 });
