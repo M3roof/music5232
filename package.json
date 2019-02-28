@@ -4,6 +4,7 @@
   "description": "Discord.js bot on Heroku",
   "main": "bot.js",
   "dependencies": {
+  "request": "2.81.0"
     "node": "8.x",
     "discord.js": "^11.3.2",
     "ffmpeg": "^0.0.4",
