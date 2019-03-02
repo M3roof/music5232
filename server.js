@@ -177,5 +177,4 @@ var prefix = "T!"
 
 
 
-
-client.login('NTA5NTgxNzYwNTQ0MjQzNzIy.D1yEtQ.lhwcZyf-u0sA9npGJJnRA8sz5pI');
+client.login(process.env.BOT_TOKEN);
